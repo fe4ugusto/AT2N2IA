@@ -1,0 +1,56 @@
+{
+    "total_raw": 5572,
+    "total_clean": 5169,
+    "ham_count": 4516,
+    "spam_count": 653,
+    "ham_pct": 87.37,
+    "spam_pct": 12.63,
+    "train_size": 4135,
+    "test_size": 1034,
+    "results": [
+        {
+            "Algoritmo": "Multinomial Naive Bayes",
+            "Acurácia": 0.9758,
+            "Precisão (Spam)": 0.9907,
+            "Recall (Spam)": 0.8168,
+            "F1-Score (Spam)": 0.8954,
+            "F1-Score (Macro)": 0.9409
+        },
+        {
+            "Algoritmo": "Regressão Logística",
+            "Acurácia": 0.9574,
+            "Precisão (Spam)": 0.9888,
+            "Recall (Spam)": 0.6718,
+            "F1-Score (Spam)": 0.8,
+            "F1-Score (Macro)": 0.8881
+        }
+    ],
+    "confusion_matrices": {
+        "Multinomial Naive Bayes": [
+            [
+                902,
+                1
+            ],
+            [
+                24,
+                107
+            ]
+        ],
+        "Regressão Logística": [
+            [
+                902,
+                1
+            ],
+            [
+                43,
+                88
+            ]
+        ]
+    },
+    "char_stats": {
+        "ham_mean": 70.45925597874225,
+        "ham_median": 52.0,
+        "spam_mean": 137.89127105666157,
+        "spam_median": 149.0
+    }
+}
